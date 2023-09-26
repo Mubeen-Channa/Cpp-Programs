@@ -1,25 +1,23 @@
 #include <iostream>
- using namespace std;
-  int main( )
+using namespace std;
+
+int main()
 {
-	int a, factorial=1;
-	cout<<"Enter a Number :"; cin>>a;
-	
-	if ( a<0 )
-	{
-		cout<<"Factorial of negative number is not possible";
-	}
-	else
-	{
-	
-	for( int z=1; z<=a; z++ )
-	{
-		factorial=factorial*z;
-	}
-	cout<<"Factorial of "<<a<<" is "<<factorial;
-	}
-  return 0;
+    int num, factorial = 1;
+    cout << "Enter a Number: ";
+    cin >> num;
+
+    if (num < 0)
+    {
+        cout << "Factorial of a negative number is not possible";
+    }
+    else
+    {
+        for (int z = 1; z <= num; z++)
+        {
+            factorial = factorial * z;
+        }
+        cout << "Factorial of " << num << " is " << factorial;
+    }
+    return 0;
 }
-
-
-
