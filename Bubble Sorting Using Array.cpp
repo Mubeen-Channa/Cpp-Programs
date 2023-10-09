@@ -14,9 +14,9 @@ void bubbleSort(int array[], int size) {
     }
   }
   
-  cout << "Sorted Array in Ascending Order:\n";  
-  for (int i = 0; i < size; ++i) {
-    cout << "  " << array[i];
+  cout<<"\nSorted Array in Ascending Order : \n";  
+  for(int i=0; i < size; ++i) {
+    cout<<"  " <<array[i];
   }
 }
 
