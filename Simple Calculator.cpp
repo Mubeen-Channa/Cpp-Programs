@@ -1,42 +1,42 @@
-#include <iostream>
+# include <iostream>
 using namespace std;
 
 int main() {
-  cout << "Simple Calculator\n";
-  float a, b;
+
   char op;
+  float num1, num2;
 
-  cout << "Enter Number 1: ";
-  cin >> a;
-
-  cout << "Enter Operation: ";
+  cout << "Enter operator: +, -, *, /   : ";
   cin >> op;
 
-  cout << "Enter Number 2: ";
-  cin >> b;
+  cout << "Enter two operands : ";
+  cin >> num1;
+  cout<<" "; 
+  cin >> num2;
 
-  if (op == '+') {
-    cout << a + b;
-  } 
-  else if (op == '-') {
-    cout << a - b;
-  } 
-  else if (op == '*') {
-    cout << a * b;
-  } 
-  else if (op == '/') {
+  switch(op) {
 
-    if (b != 0) {
-      cout << a / b;
-    } 
-    else {
-      cout << "Invalid Number: Division by zero is not allowed.";
-    }
+    case '+':
+      cout << num1 << " + " << num2 << " = " << num1 + num2;
+      break;
 
-  } 
-  else {
-    cout << "Invalid Operation: Please enter +, -, *, or /.";
+    case '-':
+      cout << num1 << " - " << num2 << " = " << num1 - num2;
+      break;
+
+    case '*':
+      cout << num1 << " * " << num2 << " = " << num1 * num2;
+      break;
+
+    case '/':
+      cout << num1 << " / " << num2 << " = " << num1 / num2;
+      break;
+
+    default:
+      // If the operator is other than +, -, * or /, error message is shown
+      cout << "Error! operator is not correct";
+      break;
   }
 
-  return 0; // Indicates successful program termination
+  return 0;
 }
