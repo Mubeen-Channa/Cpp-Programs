@@ -1,18 +1,23 @@
 #include <iostream>
 using namespace std;
-
 int main(){
-    int frist=0, second=1, sum, num;
+    // Initialization
+    int frist = 0, second = 1, sum, num;
 
-    cout<<"Enter Number for Fibonacci Series : ";   cin>>num;
-    cout<< frist <<" "<< second<<" ";   // Printing 0 and 1
+    // user Input
+    cout<<"Enter Number for Fibonacci Series: ";    cin>>num;
 
-    for (int i = 2; i < num; i++)   //loop start from 2 bcz we print 0 and 1 already
+    // Generating Fibonacci Series
+    cout<<"Fibonacci Series: ";
+    cout<< frist << " " << second << " "; // Printing 0 & 1
+
+    for(int i = 2; i < num; i++) // Loop start from 2 bcz we printed 0 & 1 already
     {
-        sum= frist+second;
+        sum = frist + second;
         cout<< sum <<" ";
-        frist=second;
-        second=sum;
+        frist = second;
+        second = sum;
     }
+
     return 0;
 }
